@@ -1,10 +1,10 @@
 import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
-from config import comm_token
 from random import randrange
+from config import comm_token
 import sqlalchemy as sq
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.exc import IntegrityError, InvalidRequestError
 
 Base = declarative_base()
