@@ -156,7 +156,7 @@ if __name__ == '__main__':
                             add_user_photos(user_id, sorted_user_photo[0][1],
                                             sorted_user_photo[0][0], current_user_id.id)
                         except AttributeError:
-                            write_msg(user_id, 'Вы зарегистрированы!\n Введите VKinder для перезагрузки бота')
+                            write_msg(user_id, 'Вы не зарегистрированы!\n Введите VKinder для перезагрузки бота')
                             break
                     # для ЧС
                     elif msg_text == '2':
